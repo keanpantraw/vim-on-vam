@@ -21,6 +21,7 @@ Installation
 
 ``./setup``
 
+After installing all plugins and their dependencies, this will open vim.
 
 Tips
 ====
