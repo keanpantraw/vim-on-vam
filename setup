@@ -1,4 +1,7 @@
 #!/bin/bash
+
+set -e
+
 DIR=`dirname $0`
 VAM="vam-setup.vim"
 PLUGINS="plugins.vim"
@@ -10,7 +13,7 @@ cp "$DIR/$VAM" ~/
 
 cp "$DIR/$PLUGINS" ~/
 
-cp ~/.vimrc ~/vimrc-original
+cp ~/.vimrc ~/vimrc-original || true
 
 echo "Should I merge existing .vimrc with vam setup, or simply replace it?"
 select result in "Merge" "Replace"
@@ -30,9 +33,10 @@ echo "" >> ~/.vimrc
 echo "" >> ~/.vimrc
 cat "$DIR/$SETTINGS" >> ~/.vimrc
 
-echo "Moving ~/.vim to ~/.vim.old"
-
-mv ~/.vim ~/.vim.old
+if [ -d ~/.vim ];then
+	echo "Moving ~/.vim to ~/.vim.old"
+	mv ~/.vim ~/.vim.old
+fi
 
 #Install all plugins using VAM
 vim

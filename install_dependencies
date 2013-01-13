@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 echo "Install thousands of dependencies ..."
 if type apt-get;then
 	apt-get install -y vim
