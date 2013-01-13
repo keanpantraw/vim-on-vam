@@ -2,7 +2,7 @@
 map <C-r> :Regrep<CR>
 map <F2>  :NERDTreeToggle<CR>
 map <F3>  :ConqueTermSplit bash<CR>
-map <F4>  :ConqueTermVSplit python<CR>
+map <F4>  :ConqueTermVSplit ipython<CR>
 map <C-b> :BufExplorer<CR>
 
 set t_Co=256

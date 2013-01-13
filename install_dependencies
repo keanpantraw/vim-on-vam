@@ -2,11 +2,9 @@
 set -e
 echo "Install thousands of dependencies ..."
 if type apt-get;then
-	apt-get install -y vim
-	apt-get install -y python-setuptools python-dev build-essential
+	apt-get install -y ipython vim python-setuptools python-dev build-essential
 elif type yum;then
-	yum install -y vim 
-	yum install -y python-setuptools
+	yum install -y ipython vim python-setuptools
 	yum groupinstall -y 'Development Tools'
 	yum groupinstall -y 'Development Libraries'	
 else
