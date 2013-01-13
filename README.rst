@@ -14,12 +14,13 @@ Features
 
 Installation
 ============= 
+::
 
-``git clone https://github.com/frenzykryger/vim-on-vam``
+  git clone https://github.com/frenzykryger/vim-on-vam
+  cd vim-on-vam
+  ./setup
 
-``cd vim-on-vam``
 
-``./setup``
 
 After installing all plugins and their dependencies, this will open vim.
 
