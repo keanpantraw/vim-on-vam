@@ -33,7 +33,7 @@ See plugins documentation (`:help <topic>`) for more details.
 
 Very Useful Documentation:
 
-* https://github.com/klen/python-mode/blob/master/README.rst
+* `python-mode README <https://github.com/klen/python-mode/blob/master/README.rst>`_
 
 * ``:help python-mode``
 
@@ -41,7 +41,7 @@ Very Useful Documentation:
 
 * ``:help pylint``
 
-* https://github.com/nvie/vim-pyunit/blob/develop/README.rst
+* `pyunit README <https://github.com/nvie/vim-pyunit/blob/develop/README.rst>`_
 
 * ``:help fugitive``
 
