@@ -1,6 +1,4 @@
 #!/bin/bash
-#Install all needed dependencies
-#Install pip
 echo "Install thousands of dependencies ..."
 if type apt-get;then
 	apt-get install -y vim
