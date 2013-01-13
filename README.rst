@@ -1,6 +1,6 @@
-vim-on-vam is vim tailored for python dev using vim-addon-manager
-#################################################################
-
+vim-on-vam is vim for python developer
+######################################
+(tailored for python dev using vim-addon-manager)
 
 Features
 ========
