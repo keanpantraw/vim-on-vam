@@ -29,26 +29,24 @@ You can find full plugin list in `plugins.vim` and remapped shortcuts in `settin
 
 See plugins documentation (`:help <topic>`) for more details.
 
-Suggested topics for reading are:
+Very Useful Documentation:
 
-https://github.com/klen/python-mode/blob/master/README.rst
+* https://github.com/klen/python-mode/blob/master/README.rst
 
-``:help python-mode``
+* ``:help python-mode``
 
-``:help rope``
+* ``:help rope``
 
-``:help pylint``
+* ``:help pylint``
 
-https://github.com/nvie/vim-pyunit/blob/develop/README.rst
+* https://github.com/nvie/vim-pyunit/blob/develop/README.rst
 
-``:help pyunit``
+* ``:help fugitive``
 
-``:help fugitive``
+* ``:help nerdtree``
 
-``:help nerdtree``
+* ``:help bufexplorer``
 
-``:help bufexplorer``
+* ``:help vim-addon-manager-getting-started``
 
-``:help vim-addon-manager-getting-started``
-
-``:help vim-addon-manager-additional-documentation``
+* ``:help vim-addon-manager-additional-documentation``
