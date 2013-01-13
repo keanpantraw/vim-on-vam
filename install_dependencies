@@ -1,0 +1,21 @@
+#!/bin/bash
+#Install all needed dependencies
+#Install pip
+#WARNING - install gvim instead of vim and make vim a gvim -v alias for current user
+#NOTE - punch me for that
+echo "Install thousands of dependencies ..."
+if type apt-get;then
+	apt-get install -y vim
+	apt-get install -y python-setuptools python-dev build-essential
+elif type yum;then
+	yum install -y vim 
+	yum install -y python-setuptools
+	yum groupinstall -y 'Development Tools'
+	yum groupinstall -y 'Development Libraries'	
+else
+	echo "Can't find package manager"
+	exit 1
+fi
+
+echo "Install python dependencies for bunched plugins:"
+easy_install nose nose_machineout vim_bridge 

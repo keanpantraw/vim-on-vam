@@ -1,0 +1,37 @@
+#!/bin/bash
+DIR=`dirname $0`
+VAM="vam-setup.vim"
+PLUGINS="plugins.vim"
+SETTINGS="settings.vim"
+
+sudo "$DIR/install_dependencies"
+
+cp "$DIR/$VAM" ~/
+
+cp "$DIR/$PLUGINS" ~/
+
+echo "Should I merge existing .vimrc with vam setup, or simply replace it?"
+select result in "Merge" "Replace"
+do
+	case $result in
+		Merge) 
+			cat ~/.vimrc >> ~/$PLUGINS;
+			mv ~/.vimrc ~/vimrc-original;
+			break;;
+		Replace)
+			break;;
+	esac
+done
+
+mv ~/$PLUGINS ~/.vimrc
+
+echo "" >> ~/.vimrc
+echo "" >> ~/.vimrc
+cat "$DIR/$SETTINGS" >> ~/.vimrc
+
+echo "Moving ~/.vim to ~/.vim.old"
+
+mv ~/.vim ~/.vim.old
+
+#Install all plugins using VAM
+vim
