@@ -39,8 +39,16 @@ https://github.com/klen/python-mode/blob/master/README.rst
 
 ``:help pylint``
 
+https://github.com/nvie/vim-pyunit/blob/develop/README.rst
+
 ``:help pyunit``
 
 ``:help fugitive``
 
 ``:help nerdtree``
+
+``:help bufexplorer``
+
+``:help vim-addon-manager-getting-started``
+
+``:help vim-addon-manager-additional-documentation``
