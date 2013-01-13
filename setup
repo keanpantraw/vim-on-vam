@@ -10,13 +10,14 @@ cp "$DIR/$VAM" ~/
 
 cp "$DIR/$PLUGINS" ~/
 
+cp ~/.vimrc ~/vimrc-original
+
 echo "Should I merge existing .vimrc with vam setup, or simply replace it?"
 select result in "Merge" "Replace"
 do
 	case $result in
 		Merge) 
 			cat ~/.vimrc >> ~/$PLUGINS;
-			mv ~/.vimrc ~/vimrc-original;
 			break;;
 		Replace)
 			break;;
