@@ -28,3 +28,19 @@ Tips
 You can find full plugin list in `plugins.vim` and remapped shortcuts in `settings.vim`.
 
 See plugins documentation (`:help <topic>`) for more details.
+
+Suggested topics for reading are:
+
+https://github.com/klen/python-mode/blob/master/README.rst
+
+``:help python-mode``
+
+``:help rope``
+
+``:help pylint``
+
+``:help pyunit``
+
+``:help fugitive``
+
+``:help nerdtree``
